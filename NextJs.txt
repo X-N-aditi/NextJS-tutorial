@@ -1,0 +1,31 @@
+NextJs is react framework , that is used to handle fetching data  , update dom etc.
+
+React server component (RSC) 
+----------------------------------
+React server component is a new architecture that was introduced by react and adopt by NextJs
+it introduces a new approach to creating react component by dividing them into two distinct types
+1. Server components
+2. client component
+
+// by default NextJs   treats all components as a "server component" 
+// server component 
+-----------------------
+these component can perform server side tsks like reading files or fetching data directly from db
+they can't use react hooks or handle user interactions
+
+
+// client components
+------------------
+if we want to create client component then we need to add "use client" directive at the top of 
+your component files
+while client component can not perform client-side tsk and can use hooks and handle user intereaction
+
+
+// react server components and routing
+-------------------------------------------
+client and server both comonents are used 
+1. work with server component that wait for certain opration to complete before rendering cntent
+2. client comp to take advantage of hooks from routing modules
+
+
+npx create-next-app@latest app-name
