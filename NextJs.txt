@@ -29,3 +29,83 @@ client and server both comonents are used
 
 
 npx create-next-app@latest app-name
+
+//-----------------------------------------------------------
+// parallel routes
+parallel routes in NEXT.JS are defined using a feature known as "slots:
+slots help organize content in a modular way
+to create a slot, we use the '@folder' naming convention
+Each defined slot automatically becomes a prop in its corresponding 'layout.tsx' file
+
+1. multiple sections/components dashboard or page
+2. split views interface
+3. multi-page layout
+4. complex admin interface
+5. indepedent route handling
+6. sub-navigation routes
+
+
+// parallel-routes
+        |
+        |
+        ----------------- sub-navigation
+ show 2 opton like default notification and archived notification
+
+
+ // conditional routes
+ like if a user logged in , show dashboard otherwise login page
+ this is achived by parallel-conditional routing
+
+
+
+ // Advance routing pattern
+ 1. parallel routes
+ 2. intercepting routes   (link from source to target folder)
+
+
+
+ // ----------------------------Important---------------------------------------------
+ // Route handler
+ 1. the app router lets you create custom request handlers for your routes using a feature called
+ route handler
+ 2. route Handlers let us build RESTful endpoints with complete control over the response
+
+ 3. ex: Node +  Express.js app
+ 4. no need to configure seperate server
+
+//-------------------------------------------------------------------------------------
+ // route handler contd.
+ 1. Route handlers are great when making external API requests as well
+       ex: building an app that need third-party api
+2. Route handler run server-side, our sensitive info like private keys stays secure and never reach
+to browser
+3. Next js support Api routes are GET, POST, PUT, PATCH, DELETE, HEAD and OPTIONS
+4. if a method not allowed, it return 405 Method not allowed response
+
+//-----------------------------------------------------------------------------------
+fetch-data with API (client componnet & server- component)=======(data-fetch)
+client component = users-client
+server component = users-server
+
+// data-fetching are 2 types 
+1. sequential 
+2. parallel
+
+// squential fetching 
+when we fetch data from one request at a time, in order , where the next request waits for the 
+previous one to finish
+sequential-data-fetch
+
+// parallel fetching
+sequential fetching is slow bcz of one after another, to solve this , parallel comes means
+things don't depend on each other , multiple things loads at the same time
+
+
+
+// fetch from database
+we need two things 
+1. database
+2. prisma
+
+
+// data mutation   : means = create, read, update, delete 
